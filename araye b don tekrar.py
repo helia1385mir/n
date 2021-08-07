@@ -1,7 +1,12 @@
 import random
 n=int(input())
-while True :
+list=[]
+while True:
+    if len(list)==n:
+        break
+    a=random.randint(1,20)
+    if a not in list:
+        list.append(a)
     
-    b=[random.randint(1,20)]
-    c=b.append(n)
-    print(c)
+print(list)
+
